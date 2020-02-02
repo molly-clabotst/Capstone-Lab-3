@@ -39,6 +39,11 @@ class ClassList:
         ''' Verifies if the student is enrolled or not '''
         return student in self.class_list
 
+    def is_class_full(self):
+        if len(self.class_list) < self.max_students:
+            return False
+        else:
+            return True
 
     def index_of_student(self, student):
         ''' Returns position of student in list, indexed from 1
@@ -74,6 +79,7 @@ def main():
     except:
         print('Did not add student twice')
 
+    print(capstone.is_class_full())
     capstone.add_student('David')
     capstone.add_student('Elliot')
     capstone.add_student('Flora')  # Shouldn't add
