@@ -11,4 +11,4 @@ class TestCamelCase(TestCase):
         self.assertEqual('helloWorld', camelCase.camel_case('Hello World'))
         self.assertEqual('', camelCase.camel_case(''))
         self.assertEqual('helloWorld', camelCase.camel_case('   Hello   World   '))
-        self.assertEqual('🙂🙂', camelCase.camel_case('🙂 	🙂'))
+        self.assertEqual('🙃🙃', camelCase.camel_case('  🙃  🙃  '))
